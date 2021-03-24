@@ -1,0 +1,213 @@
+html {
+
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  background-attachment: fixed;
+  min-height: 100%;
+}
+
+p {
+  text-align: center;
+
+}
+
+.flex {
+  position: relative;
+  /*min-height: 100%;*/
+  width: 100vw;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+
+  /*background-color: black;*/
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+.flex2 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+
+
+
+
+#app {
+  text-align: center;
+  font-weight: bold;
+  width: 80%;
+  font-size: 9vh;
+  position: absolute;
+  cursor: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+
+@media screen and (max-width: 1025px) {
+  #app {
+    font-size: 7vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #app {
+    font-size: 5vh;
+  }
+}
+
+
+#app2 {
+
+    width: auto;
+    color: white;
+    font-size: 5vh;
+    /*text-shadow: 0 0px 20px white;*/
+    font-family: "Helvetica Neu", Helvetica, Arial, sans-serif;
+    text-align: right;
+    margin: auto;
+    display: block;
+    font-weight: bold;
+    /*position: absolute;*/
+    cursor: auto;
+    width: 85%;
+    -webkit-animation: fadein 2s, shadow 2s linear infinite;
+     -moz-animation: fadein 2s;
+      -ms-animation: fadein 2s;
+       -o-animation: fadein 2s;
+          animation: fadein 2s, shadow 4s ease-in-out 0s infinite alternate;
+}
+
+@media screen and (max-width: 1025px) {
+  #app2 {
+    font-size: 4vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #app2 {
+    font-size: 3vh;
+  }
+}
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+#app2 a{
+
+    /*width: auto;*/
+    color: white;
+    cursor: pointer;
+    /*font-size: 4vh;
+    text-shadow: 0 0px 20px white;
+    font-family: "Meiryo", Meiryo, "MS P Gothic", sans-serif;
+    text-align: center;*/
+    /*font-weight: bold;*/
+    /*position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;*/
+}
+
+#flash {
+  animation: glow 1s ease-in-out 0s infinite alternate;
+  cursor: pointer;
+  width: 85%;
+  font-size: 6vh;
+}
+
+@media screen and (max-width: 1025px) {
+  #flash {
+    font-size: 5vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #flash {
+    font-size: 4vh;
+  }
+}
+
+#title {
+  font-size: 6vh;
+}
+
+@media screen and (max-width: 1025px) {
+  #title {
+    font-size: 5vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #title {
+    font-size: 4vh;
+  }
+}
+
+@keyframes glow{
+  from{
+    color: white;
+  }
+  to{
+    color: transparent;
+  }
+}
+
+
+#info {
+  position: fixed;
+  font-family: "Helvetica Neu", Helvetica, Arial, sans-serif;
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5vh;
+  left: 25px;
+  top: 10px;
+  z-index:555;
+  /*animation: glow2 1s ease-in-out 0s infinite alternate;
+  animation-delay: 6s;*/
+}
+
+#info a {
+  color: white;
+  text-decoration: none;
+}

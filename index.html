@@ -1,0 +1,229 @@
+<html>
+
+<head>
+
+<title>In These Times</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+<link rel="stylesheet" href="style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.5.1.min.js"><\/script>')</script>
+
+
+<script src="./js/t-writer.js"></script>
+
+
+<style>
+
+body {
+  background-image: linear-gradient(rgba(255,105,180, 1), rgba(255,105,180, 0.75)) fixed;
+  background: -webkit-linear-gradient(rgba(255,105,180, 1), rgba(255,105,180, 0.75)) fixed;
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<!--<div class="flex">-->
+  <div class="flex2">
+
+    <!--<div id="info">
+        <p>Citation note: text sourced from the open are.na board <a href="https://www.are.na/clark-dude/euphemizing-the-pandemic" target ="blank"><span style="text-decoration:underline">'Euphemizing the Pandemic'</span></a>, initiated by clark.dude.</p>
+    </div>-->
+
+    <div  id="app2">
+
+    <p>
+      <br>
+      <span id="title">In These Times, 2020.</span><br>
+      <br>
+      <span style="font-style: italic">HTML, CSS, Javascript, Audio.</span>
+      <br>
+      <br>
+      The unprecedented global escalation of the COVID-19 pandemic in 2020 was as abrupt as it was unexpected.
+
+      Seemingly overnight, millions of lives were turned upside down as nations were advised to stay indoors in an attempt to mitigate the spread of this incredibly infectious - and potentially fatal - disease. 
+      <br><br>
+The continual revision of lockdown deadlines compounded the abiding sense of uncertainty, as people not only worried for the safety of their friends and family, but also wondered when they would be able to see them again.
+
+Amidst this anxiety, a new tone began to emerge within our digital interactions, as carefree conversational openings and signoffs became replaced by cautious euphemisms, attempting to acknowledge - in the softest terms possible - these sudden and dramatic shifts in circumstance.
+<br><br>
+
+Inevitably, this language quickly spread from the personal to the commercial, becoming co-opted by businesses and corporations seeking to trade off the notion that their presence in our lives provided a reassuring constant in these otherwise uncertain times;
+
+discordant piano music and black and white visuals, which inevitably resolved into melody and color at the promise of a commercial product or service, rapidly became a trope of early-COVID TV and pre-roll advertising.
+<br><br>
+
+During the summer of 2020, I contributed to the '<a href="https://www.are.na/clark-dude/euphemizing-the-pandemic" target="_blank">Euphemizing The Pandemic</a>' community board (initiated by <a href="https://www.instagram.com/clark.dude/" target="_blank">Clark Dude</a>) on the <a href="https://www.are.na/" target="_blank">Are.na</a> website, where users were invited to submit newly encountered phrases that added to the rapidly expanding COVID vernacular.
+
+'In These Times' reads a selection of the euphemisms collected by the community, offset against a soundtrack which compiles the opening musical phrases from various Covid-19 commercials, looped from the youtube video '<a href="https://youtu.be/vM3J9jDoaTA" target="_blank">Every Covid-19 Commercial is Exactly the Same</a>' by <a href="https://www.youtube.com/channel/UC31hW9tF2_bBe2Kb_uIUuNA" target="_blank">Microsoft Sam</a>.
+
+  <br><br><br>
+  <span style="font-style: italic;">CREDITS</span>
+  <br><br>
+  Text: <a href="https://www.are.na/clark-dude/euphemizing-the-pandemic" target="_blank">Eupemizing The Pandemic</a>, initiated by <a href="https://www.instagram.com/clark.dude/" target="_blank">Clark Dude</a>.
+ <br><br>
+  Concept, design and code: W. Wright.
+  <br><br>
+  Audio: <a href="https://www.youtube.com/channel/UC31hW9tF2_bBe2Kb_uIUuNA" target="_blank">Microsoft Sam</a>, "<a href="https://youtu.be/vM3J9jDoaTA" target="_blank">Every Covid-19 Commercial is Exactly the Same</a>".
+  <br><br>
+  Audio Loop: W. Wright.
+  <br><br>
+  Please note: sound is turned on by default, but can be toggled on and off using the spacebar. Google Chrome recommended for best performance.
+  <br><br>
+
+</p>
+
+    <p style="text-decoration:none;" onclick="loadDoc()"><span id="flash" style="text-decoration: underline; font-style: italic">CLICK TO BEGIN PERFORMANCE</span></p>
+    <br>
+    <br>
+    </div>
+
+  <div id="app" style="display: none">
+</div>
+
+<!--</div>-->
+
+<audio id="vid"  loop >
+        <source src=".mp3" type="audio/mpeg">
+        <source src=".ogg" type="audio/ogg">
+</audio>
+
+<script type="text/javascript">
+
+window.onload = function(){
+  var myVideo = document.getElementById("vid");
+
+  document.onkeydown = function(event) {
+    switch (event.keyCode) {
+      case 32: //SpaceBar
+        myVideo.muted = !myVideo.muted;
+      break;
+    }
+    return false;
+  }
+}
+
+function loadDoc() {
+	$("#app2").fadeOut(600);
+  $("#info").fadeOut(600);
+	document.getElementById('vid').play();
+	$("#app").fadeIn(600);
+
+
+var app = document.getElementById('app');
+
+const writer = new Typewriter(app, {
+loop: true,
+typeSpeed: 55,
+deleteSpeed: 90,
+typeColor: 'white'
+})
+
+writer
+.changeTypeColor('white')
+.rest(1600)
+.type('Dear Internet,')
+.rest(1200)
+.queueClearText()
+.type('Let me start with this -')
+.rest(1200)
+.queueClearText()
+.type('I’m sorry,')
+.rest(1600)
+.queueClearText()
+.type('This is a first for me.')
+.rest(1600)
+.queueClearText()
+.type('I’ve never faced criticism like this before,')
+.rest(1200)
+.queueClearText()
+.type('because I’ve never made a mistake like this before.')
+.rest(2000)
+.queueClearText()
+.type('I’m surrounded by good people and believe I make good decisions,')
+.rest(1200)
+.queueClearText()
+.type('but I’m still a human being.')
+.rest(1600)
+.queueClearText()
+.type('I can be wrong.')
+.rest(2400)
+.queueClearText()
+.type('I didn’t do it for views.')
+.rest(1600)
+.queueClearText()
+.type('I get views.')
+.rest(1600)
+.queueClearText()
+.type('I did it because I thought I could make a positive ripple on the internet,')
+.rest(1200)
+.queueClearText()
+.type('not cause a monsoon of negativity.')
+.rest(1600)
+.queueClearText()
+.type('That’s never the intention.')
+.rest(2000)
+.queueClearText()
+.type('While I thought "if this video saves just ONE life, it’ll be worth it,"')
+.rest(1200)
+.queueClearText()
+.type('I was misguided by shock and awe, as portrayed in the video.')
+.rest(1600)
+.queueClearText()
+.type('I still am.')
+.rest(2400)
+.queueClearText()
+.type('I do this sh*t every day.')
+.rest(1600)
+.queueClearText()
+.type('I’ve made a 15 minute TV show EVERY SINGLE DAY for the past 460+ days.')
+.rest(1600)
+.queueClearText()
+.type('One may understand that it’s easy to get caught up in the moment')
+.rest(1200)
+.queueClearText()
+.type('without fully weighing the possible ramifications.')
+.rest(1600)
+.queueClearText()
+.type('I’m often reminded of how big a reach I truly have')
+.rest(1200)
+.queueClearText()
+.type('& with great power comes great responsibility...')
+.rest(1200)
+.queueClearText()
+.type('for the first time in my life I’m regretful to say I handled that power incorrectly.')
+.rest(1600)
+.queueClearText()
+.type('It won’t happen again.')
+.rest(2000)
+.queueClearText()
+.type('I love everyone.')
+.rest(1600)
+.queueClearText()
+.type('I believe in people.')
+.rest(1600)
+.queueClearText()
+.type('I’m out here.')
+.rest(1600)
+.queueClearText()
+.type('Peace.')
+.rest(4800)
+.queueClearText()
+.rest(4800)
+.start()
+
+}
+
+</script>
+
+</body>
+
+</html>
