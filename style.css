@@ -38,7 +38,9 @@ p {
   justify-content: center;
   align-items: center;*/
 }
-
+.scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
 
 
